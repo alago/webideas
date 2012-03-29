@@ -64,4 +64,23 @@ Ideasweb::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  
+    config.action_mailer.default_url_options = { :host => 'http://blazing-mist-3619.herokuapp.com/' }  
+    require 'tlsmail'
+  Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+  ActionMailer::Base.raise_delivery_errors = true
+  ActionMailer::Base.perform_deliveries = true
+  ActionMailer::Base.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+    :enable_starttls_auto => true,  #this is the important shit!
+    :address => 'smtp.gmail.com', #'localhost', 
+    :port => 587,
+    #:tls => true,
+    :domain => 'gmail.com',  # mail.customdomain.com if you use google apps
+    :authentication => :login,
+    :user_name => 'venture.sp01@gmail.com',
+    :password => 'venture01'
+} 
+  
 end
