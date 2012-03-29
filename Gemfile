@@ -11,7 +11,6 @@ end
 
 group :production do
     gem 'pg'
-    gem 'gmail_smtp'
 end
 
 # Gems used only for assets and not required
