@@ -7165,3 +7165,50 @@ Served asset /ideas.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 02:07:27 +0200
 Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT "ideas".* FROM "ideas" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mActsAsVotable::Vote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 't'[0m
+  [1m[35mActsAsVotable::Vote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 'f'
+  Rendered ideas/index.html.erb within layouts/application (174.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 272ms (Views: 259.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /ideas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /comment.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /comment.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /ideas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 02:14:55 +0200
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 02:14:56 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
