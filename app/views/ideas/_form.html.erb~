@@ -1,0 +1,45 @@
+<%= form_for(@idea) do |f| %>
+  <% if @idea.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
+
+      <ul>
+      <% @idea.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :target %><br />
+    <%= f.text_field :target %>
+  </div>
+  <div class="field">
+    <%= f.label :need_statement %><br />
+    <%= f.text_field :need_statement %>
+  </div>
+  <div class="field">
+    <%= f.label :product_name %><br />
+    <%= f.text_field :product_name %>
+  </div>
+  <div class="field">
+    <%= f.label :product_cat %><br />
+    <%= f.text_field :product_cat %>
+  </div>
+  <div class="field">
+    <%= f.label :benefit_statement %><br />
+    <%= f.text_field :benefit_statement %>
+  </div>
+  <div class="field">
+    <%= f.label :alternative %><br />
+    <%= f.text_field :alternative %>
+  </div>
+  <div class="field">
+    <%= f.label :differentiation %><br />
+    <%= f.text_field :differentiation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

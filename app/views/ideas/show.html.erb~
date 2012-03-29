@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Target:</b>
+  <%= @idea.target %>
+</p>
+
+<p>
+  <b>Need statement:</b>
+  <%= @idea.need_statement %>
+</p>
+
+<p>
+  <b>Product name:</b>
+  <%= @idea.product_name %>
+</p>
+
+<p>
+  <b>Product cat:</b>
+  <%= @idea.product_cat %>
+</p>
+
+<p>
+  <b>Benefit statement:</b>
+  <%= @idea.benefit_statement %>
+</p>
+
+<p>
+  <b>Alternative:</b>
+  <%= @idea.alternative %>
+</p>
+
+<p>
+  <b>Differentiation:</b>
+  <%= @idea.differentiation %>
+</p>
+
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %>

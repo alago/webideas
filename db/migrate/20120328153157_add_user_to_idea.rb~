@@ -1,0 +1,4 @@
+class AddUserToIdea < ActiveRecord::Migration
+  def change
+  end
+end

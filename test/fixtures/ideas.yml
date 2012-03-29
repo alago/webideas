@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  target: MyString
+  need_statement: MyString
+  product_name: MyString
+  product_cat: MyString
+  benefit_statement: MyString
+  alternative: MyString
+  differentiation: MyString
+
+two:
+  target: MyString
+  need_statement: MyString
+  product_name: MyString
+  product_cat: MyString
+  benefit_statement: MyString
+  alternative: MyString
+  differentiation: MyString

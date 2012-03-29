@@ -1,0 +1,35 @@
+<h1>Listing ideas</h1>
+
+<table>
+  <tr>
+    <th>Target</th>
+    <th>Need statement</th>
+    <th>Product name</th>
+    <th>Product cat</th>
+    <th>Benefit statement</th>
+    <th>Alternative</th>
+    <th>Differentiation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ideas.each do |idea| %>
+  <tr>
+    <td><%= idea.target %></td>
+    <td><%= idea.need_statement %></td>
+    <td><%= idea.product_name %></td>
+    <td><%= idea.product_cat %></td>
+    <td><%= idea.benefit_statement %></td>
+    <td><%= idea.alternative %></td>
+    <td><%= idea.differentiation %></td>
+    <td><%= link_to 'Show', idea %></td>
+    <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
+    <td><%= link_to 'Destroy', idea, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Idea', new_idea_path %>

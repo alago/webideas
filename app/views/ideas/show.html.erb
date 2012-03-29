@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<div Sentence 1>
+  <h1 id="sentence">Sentence 1</h1>
+  <b>For </b> <%= @idea.target %> <b>who</b> <%= @idea.need_statement %><br/>
+  <b>The</b> <%= @idea.product_name %> <b> is a</b> <%= @idea.product_cat %><br/>
+  <b>That</b>  <%= @idea.benefit_statement %> <br/>
+</div>
+<div Sentence 2>
+  <h1 id="sentence">Sentence 2</h1>
+  <b>Unlike </b> <%= @idea.alternative %> <br/>
+  <b>Our Product</b>  <%= @idea.differentiation %> <br/>
+</div>
+
+<div class="votos">
+ <%= link_to "+1", vote_up_idea_url(@idea), :method => :post
+ -%>&nbsp;|&nbsp;<%= link_to "-1", vote_down_idea_url(@idea), :method => :post -%>
+</div>
+
+<div class="comment">
+  <%= form_for [@idea, Comment.new] do |f| %>
+  <p>
+    <%= f.text_area :comment %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>
+</div>
+
+<table class="comments_table">
+  <% for comment in @idea.comments %>
+    <tr><th><%= comment.user.email %></th><th><%= comment.created_at.to_formatted_s(:short)  %></th></tr>
+    <tr><td colspan='2'><%= comment.comment %></td></tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %> |
+<%= link_to 'Destroy', @idea, confirm: 'Are you sure?', method: :delete %>
+
