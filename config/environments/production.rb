@@ -78,7 +78,7 @@ Ideasweb::Application.configure do
     :port => 587,
     #:tls => true,
     :domain => 'gmail.com',  # mail.customdomain.com if you use google apps
-    :authentication => :login,
+    :authentication => :plain,
     :user_name => 'venture.sp01@gmail.com',
     :password => 'venture01'
 } 
