@@ -7,6 +7,11 @@ div.comment textarea{
     height:80px;
     border: 1px dotted #000099;
     }
+div.comment {
+	    float: center;
+	    display: block;
+}
+
 
 
 table {
@@ -16,6 +21,9 @@ table {
 	border-width: 1px;
 	border-color: #666666;
 	border-collapse: collapse;
+margin: auto;
+
+
 }
 table th {
 	border-width: 1px;

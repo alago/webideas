@@ -24196,3 +24196,1192 @@ Served asset /foros.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:01 +0200
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Processing by ForosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered foros/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:44 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mActsAsVotable::Vote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 't'[0m
+  [1m[35mActsAsVotable::Vote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mActsAsVotable::Vote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 2 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 't'
+  [1m[36mActsAsVotable::Vote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 2 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 'f'[0m
+  Rendered ideas/index.html.erb within layouts/application (6.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /foros.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:45 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Processing by ForosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered foros/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:46 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mActsAsVotable::Vote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 't'[0m
+  [1m[35mActsAsVotable::Vote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mActsAsVotable::Vote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 2 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 't'
+  [1m[36mActsAsVotable::Vote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 2 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 'f'[0m
+  Rendered ideas/index.html.erb within layouts/application (5.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/foros" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Processing by ForosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered foros/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /comment.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:00:48 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Processing by ForosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered foros/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /comment.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /ideas.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Processing by ForosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered foros/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:54 +0200
+Served asset /foros.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:55 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros/new" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Processing by ForosController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered foros/_form.html.erb (2.5ms)
+  Rendered foros/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:01:56 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/foros/8" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Processing by ForosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mForo Load (0.1ms)[0m  [1mSELECT "foros".* FROM "foros" WHERE "foros"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 8 AND "comments"."commentable_type" = 'Foro' ORDER BY created_at ASC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered comments/_comments.html.erb (2.8ms)
+  Rendered comments/_comment_form.html.erb (2.0ms)
+  Rendered foros/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /ideas.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:09 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mActsAsVotable::Vote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 't'
+  [1m[36mActsAsVotable::Vote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 1 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mActsAsVotable::Vote Load (3.6ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 2 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 't'[0m
+  [1m[35mActsAsVotable::Vote Load (0.3ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = 2 AND "votes"."votable_type" = 'Idea' AND "votes"."vote_flag" = 'f'
+  Rendered ideas/index.html.erb within layouts/application (49.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 62ms (Views: 55.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:14 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered comments/_comment_form.html.erb (1.8ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 1 AND "comments"."commentable_type" = 'Idea' ORDER BY created_at ASC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered comments/_comments.html.erb (5.3ms)
+  Rendered ideas/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /comment.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:15 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered comments/_comment_form.html.erb (1.5ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 1 AND "comments"."commentable_type" = 'Idea' ORDER BY created_at ASC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered comments/_comments.html.erb (3.8ms)
+  Rendered ideas/show.html.erb within layouts/application (8.7ms)
+Compiled ideas.css  (19ms)  (pid 12110)
+Compiled application.css  (2ms)  (pid 12110)
+Completed 200 OK in 95ms (Views: 92.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /ideas.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:39 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered comments/_comment_form.html.erb (1.4ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 1 AND "comments"."commentable_type" = 'Idea' ORDER BY created_at ASC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered comments/_comments.html.erb (4.7ms)
+  Rendered ideas/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /comment.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /foros.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:02:40 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered comments/_comment_form.html.erb (1.3ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 1 AND "comments"."commentable_type" = 'Idea' ORDER BY created_at ASC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered comments/_comments.html.erb (3.9ms)
+  Rendered ideas/show.html.erb within layouts/application (8.2ms)
+Compiled ideas.css  (8ms)  (pid 12110)
+Compiled application.css  (2ms)  (pid 12110)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /ideas.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:17 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered comments/_comment_form.html.erb (1.3ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 1 AND "comments"."commentable_type" = 'Idea' ORDER BY created_at ASC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered comments/_comments.html.erb (4.0ms)
+  Rendered ideas/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /comment.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:18 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered comments/_comment_form.html.erb (43.9ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 1 AND "comments"."commentable_type" = 'Idea' ORDER BY created_at ASC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered comments/_comments.html.erb (4.0ms)
+  Rendered ideas/show.html.erb within layouts/application (51.2ms)
+Compiled ideas.css  (8ms)  (pid 12110)
+Compiled application.css  (1ms)  (pid 12110)
+Completed 200 OK in 84ms (Views: 81.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /ideas.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:31 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Processing by ForosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mForo Load (0.1ms)[0m  [1mSELECT "foros".* FROM "foros" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered foros/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /foros.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:39 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/ideas/new" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Processing by IdeasController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered ideas/_form.html.erb (6.1ms)
+  Rendered ideas/new.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:03:43 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros/8" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Processing by ForosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" WHERE "foros"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 8 AND "comments"."commentable_type" = 'Foro' ORDER BY created_at ASC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered comments/_comments.html.erb (2.6ms)
+  Rendered comments/_comment_form.html.erb (1.7ms)
+  Rendered foros/show.html.erb within layouts/application (6.6ms)
+Compiled ideas.css  (8ms)  (pid 12110)
+Compiled application.css  (2ms)  (pid 12110)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /ideas.css - 200 OK (2ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /comment.js - 304 Not Modified (48ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:53 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/foros" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Processing by ForosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered foros/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /ideas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /foros.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:55 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/foros/7" for 127.0.0.1 at 2012-03-29 15:04:57 +0200
+Processing by ForosController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mForo Load (0.1ms)[0m  SELECT "foros".* FROM "foros" WHERE "foros"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = 7 AND "comments"."commentable_type" = 'Foro' ORDER BY created_at ASC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered comments/_comments.html.erb (1.8ms)
+  Rendered comments/_comment_form.html.erb (1.1ms)
+  Rendered foros/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:57 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comment.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /comment.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /foros.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /comment.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foros.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /foros.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-29 15:04:58 +0200
+Served asset /application.js - 304 Not Modified (1ms)

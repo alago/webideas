@@ -8,4 +8,6 @@
 <%= render :partial => "comments/comment_form", :locals => { :commentable => @foro } %>
 
 <%= link_to 'Edit', edit_foro_path(@foro) %> |
-<%= link_to 'Back', foros_path %>
+<%= link_to 'Back', foros_path %> |
+<%= link_to 'Destroy', @foro, confirm: 'Are you sure?', method: :delete %>
+
