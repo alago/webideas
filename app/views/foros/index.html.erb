@@ -4,13 +4,15 @@
   <tr>
     <th>Titulo</th>
     <th>Creador</th>
-
+    <th>Fecha</th>
+   
   </tr>
 
 <% @foros.each do |foro| %>
   <tr>
     <td><%= link_to foro.titulo, foro %></td>
     <td><%= foro.user.email %></td>
+    <td><%= foro.created_at %></td>
   </tr>
 <% end %>
 </table>
