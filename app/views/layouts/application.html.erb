@@ -7,20 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div>
+  <div class="banner">
+  <div id="links">
   <%= link_to 'Inicio', root_url() %> &nbsp;|&nbsp;
-  <%= link_to 'Foro', foros_url() %> &nbsp;|&nbsp;
+  <%= link_to 'Foro', foros_url() %>
+  </div>
+  <div id="login">
   <% if current_user -%>
     Hola <%= current_user.email %>&nbsp;|&nbsp;
     <%= link_to "Log Out", destroy_user_session_path(), :method => :delete -%>
   <% else -%>
     Regístrate!&nbsp;|&nbsp;<%= link_to "Log In", new_user_session_path() -%>&nbsp;|&nbsp;<%= link_to "Sign Up", new_user_registration_path() -%>
   <% end -%>
-</div>
-<p id="notice"><%= notice %></p>
+  </div>
+  </div>
+<br/>
+<br/>
+  <div id="container">
+    <p id="notice"><%= notice %></p>
 
 
-<%= yield %>
+    <%= yield %>
 
+  </div>
 </body>
 </html>

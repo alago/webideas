@@ -54,3 +54,27 @@ div {
   ul li {
     font-size: 12px;
     list-style: square; } }
+
+
+
+div#container
+{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+}
+
+div#links
+{
+
+	float: left;
+	display:inline;
+}
+
+div#login
+{
+	float: right;
+	display:inline;
+
+}
