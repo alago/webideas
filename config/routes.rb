@@ -1,5 +1,8 @@
 Ideasweb::Application.routes.draw do
+  resources :foros
+
   devise_for :users
+
 
   resources :ideas do
     resources :comments
@@ -8,7 +11,10 @@ Ideasweb::Application.routes.draw do
       post 'vote_down'
     end
   end
-  
+  resources :foros do
+    resources :comments
+    end
+
   root :to => "ideas#index"
 
 

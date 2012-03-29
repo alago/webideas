@@ -1,0 +1,11 @@
+
+<table class="comments_table">
+
+<%= render :partial => "comments/comment_form", :locals => { :commentable => @idea } %>
+  <tr><th colspan='2' class='titulo_foro'><b><%= @foro.titulo %></b></th></tr>
+  <%= render :partial => "comments/comments", :locals => { :commentable => @foro } %>
+</table>
+
+
+<%= link_to 'Edit', edit_foro_path(@foro) %> |
+<%= link_to 'Back', foros_path %>

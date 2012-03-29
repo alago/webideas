@@ -63,7 +63,10 @@ class IdeasController < ApplicationController
   # PUT /ideas/1.json
   def update
     @idea = Idea.find(params[:id])
-
+    if @idea.user != current_user
+      flash[:notice] = "No puedes modificar ideas de otros"
+      redirect_to idea_url(@idea)
+    end
     respond_to do |format|
       if @idea.update_attributes(params[:idea])
         format.html { redirect_to @idea, notice: 'Idea was successfully updated.' }
@@ -79,8 +82,11 @@ class IdeasController < ApplicationController
   # DELETE /ideas/1.json
   def destroy
     @idea = Idea.find(params[:id])
+    if @idea.user != current_user
+      flash[:notice] = "No puedes modificar ideas de otros"
+      redirect_to idea_url(@idea)
+    end
     @idea.destroy
-
     respond_to do |format|
       format.html { redirect_to ideas_url }
       format.json { head :no_content }

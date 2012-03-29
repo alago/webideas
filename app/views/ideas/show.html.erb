@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <div Sentence 1>
   <h1 id="sentence">Sentence 1</h1>
@@ -17,24 +17,10 @@
  -%>&nbsp;|&nbsp;<%= link_to "-1", vote_down_idea_url(@idea), :method => :post -%>
 </div>
 
-<div class="comment">
-  <%= form_for [@idea, Comment.new] do |f| %>
-  <p>
-    <%= f.text_area :comment %>
-  </p>
-  <p>
-    <%= f.submit "Submit" %>
-  </p>
-<% end %>
-</div>
-
+<%= render :partial => "comments/comment_form", :locals => { :commentable => @idea } %>
 <table class="comments_table">
-  <% for comment in @idea.comments %>
-    <tr><th><%= comment.user.email %></th><th><%= comment.created_at.to_formatted_s(:short)  %></th></tr>
-    <tr><td colspan='2'><%= comment.comment %></td></tr>
-  <% end %>
+<%= render :partial => "comments/comments", :locals => { :commentable => @idea } %>
 </table>
-
 
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
 <%= link_to 'Back', ideas_path %> |

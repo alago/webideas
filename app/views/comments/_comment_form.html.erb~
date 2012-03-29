@@ -1,0 +1,11 @@
+<div class="comment">
+  <%= form_for [@idea, Comment.new] do |f| %>
+  <p>
+    <%= f.text_area :comment %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>
+</div>
+

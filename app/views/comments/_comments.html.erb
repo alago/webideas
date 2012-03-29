@@ -1,0 +1,6 @@
+
+  <% for comment in commentable.comments %>
+    <tr><th><%= comment.user.email %></th><th><%= comment.created_at.to_formatted_s(:short)  %></th></tr>
+    <tr><td colspan='2'><%= comment.comment %></td></tr>
+  <% end %>
+

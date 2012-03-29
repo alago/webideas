@@ -3,8 +3,8 @@ class CommentsController < ApplicationController
   def create
     
     @comment = Comment.new(params[:comment])
-    @idea = Idea.find(params[:idea_id])
-    @comment.commentable = @idea
+    @commentable = Comment.find(params[:commentable_id])
+    @comment.commentable = @commentable
     @comment.user = current_user
     respond_to do |format|
       if @comment.save

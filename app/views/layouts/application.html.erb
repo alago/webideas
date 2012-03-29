@@ -9,6 +9,7 @@
 <body>
 <div>
   <%= link_to 'Inicio', root_url() %> &nbsp;|&nbsp;
+  <%= link_to 'Foro', foros_url() %> &nbsp;|&nbsp;
   <% if current_user -%>
     Hola <%= current_user.email %>&nbsp;|&nbsp;
     <%= link_to "Log Out", destroy_user_session_path(), :method => :delete -%>
@@ -16,9 +17,7 @@
     Regístrate!&nbsp;|&nbsp;<%= link_to "Log In", new_user_session_path() -%>&nbsp;|&nbsp;<%= link_to "Sign Up", new_user_registration_path() -%>
   <% end -%>
 </div>
-<div>
-  <%= flash[:notice] %>
-</div>
+<p id="notice"><%= notice %></p>
 
 
 <%= yield %>

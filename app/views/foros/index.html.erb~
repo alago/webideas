@@ -1,0 +1,23 @@
+<h1>Listing foros</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @foros.each do |foro| %>
+  <tr>
+    <td><%= foro.titulo %></td>
+    <td><%= link_to 'Show', foro %></td>
+    <td><%= link_to 'Edit', edit_foro_path(foro) %></td>
+    <td><%= link_to 'Destroy', foro, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Foro', new_foro_path %>
